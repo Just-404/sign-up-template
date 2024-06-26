@@ -20,9 +20,18 @@
 * {
     margin: 0;
   }
+  html{
+    height: 100dvb;
+  }
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
   }
 img, picture, video, canvas, svg {
     display: block;
@@ -34,20 +43,65 @@ input, button {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-
+.main-container{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+}
+.form-container{
+  background-color: #fff;
+  width: 50%;
+}
 .background-container{
     background-color: #cccccc;
-    width: 5rem;
-    height: 500px;
+    width: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-image: url("images/coconut-tree-on-beach.jpg");
+    display: flex;
+    align-items: center;
 }
-#credits{
-    font-family: "norsebold";
-    line-height: 1.5rem;
+.logo-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.logo{
+  background-color: #000;
+  opacity: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.logo p{
+  font-size: 3.5rem;
+  color: wheat;
+  font-family: "norsebold";
+
+}
+
+.credits{
+    align-self: center;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+}
+.credits p{
+  background-color: #02020279;
+  padding: 0.3rem;
+}
+.credits p a{
+  color: #ffffff;
+
 }
 img{
     height: 200px;
